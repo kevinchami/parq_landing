@@ -29,6 +29,7 @@ const SearchBar = ({ onLocationSelected }) => {
         type="text"
         placeholder="Search a location (e.g. Mamilla Jerusalem)"
         className="search-bar-input"
+        autoComplete="off"
       />
     </div>
   );

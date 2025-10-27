@@ -49,7 +49,7 @@ const Hero = () => {
               </div>
               <div className="stat">
                 <span className="stat-number">200+</span>
-                <span className="stat-label">Daily searches</span>
+                <span className="stat-label">Total searches</span>
               </div>
             </div>
           </div>

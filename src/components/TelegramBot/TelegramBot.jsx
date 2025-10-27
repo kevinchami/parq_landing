@@ -64,7 +64,15 @@ const TelegramBot = () => {
 
               <div className="telegram-input">
                 <input type="text" placeholder="Type a message..." />
-                <button className="send-button">➤</button>
+                <button
+                  className="send-button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open("https://t.me/parq_prices_bot", "_blank");
+                  }}
+                >
+                  ➤
+                </button>
               </div>
             </div>
           </div>
