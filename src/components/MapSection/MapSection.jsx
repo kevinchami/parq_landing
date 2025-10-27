@@ -374,13 +374,21 @@ const MapSection = () => {
                     {Array.isArray(parking.pricingListImageUrls) &&
                     parking.pricingListImageUrls.length > 0 ? (
                       <a
-                        href={parking.pricingListImageUrls[0].url}
+                        href={
+                          parking.pricingListImageUrls[
+                            parking.pricingListImageUrls.length - 1
+                          ].url
+                        }
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
                       >
                         <img
-                          src={parking.pricingListImageUrls[0].url}
+                          src={
+                            parking.pricingListImageUrls[
+                              parking.pricingListImageUrls.length - 1
+                            ].url
+                          }
                           alt="Price List"
                           className="price-list-thumb"
                         />
