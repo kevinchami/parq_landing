@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import Button from "../Hero/Button/Button";
+import { openIosApp } from "../../utils/functions";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -72,9 +73,9 @@ const Navbar = () => {
             <Button
               variant="accent"
               size="small"
-              onClick={() => console.log("Download app")}
+              onClick={() => openIosApp()}
             >
-              Get App Soon
+              Get App
             </Button>
           </div>
 

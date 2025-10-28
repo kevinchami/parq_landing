@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import PhoneMockup from "../PhoneMockup/PhoneMockup";
 import Button from "./Button/Button";
+import { openIosApp } from "../../utils/functions";
 
 const Hero = () => {
   return (
@@ -23,12 +24,8 @@ const Hero = () => {
               decisions.
             </p>
             <div className="hero-buttons">
-              <Button
-                variant="primary"
-                size="large"
-                onClick={() => console.log("Download clicked")}
-              >
-                Download Parq Soon
+              <Button variant="primary" size="large" onClick={() => openIosApp()}>
+                Download Parq
               </Button>
               <Button
                 variant="secondary"
